@@ -50,7 +50,7 @@
   },
   "authors": [],
   "body": {
-    "comment": "Tempo is a good tool and needs UI work, however, the ask amount is overpriced for a 6 month operating budget. We \nrun 6 relay nodes, preview and preprod testnet nodes plus a midnight node for less than 5% of that. We also \nbelieve development should be incentivized through the treasury, not have the entire budget come from the \ntreasury."
+    "comment": "Tempo is a good tool and needs UI work, however, the ask amount is overpriced for a 6 month operating budget. We run relay nodes, preview and preprod testnet nodes plus a midnight node for a small percentage of that. We also believe in general that development should be incentivized through the treasury, not have the entire budget come from the treasury."
   },
   "hashAlgorithm": "blake2b-256"
 }
