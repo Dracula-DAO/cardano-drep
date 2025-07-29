@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Treasury withdrawals\n\nSoftware Development Proposals:\nDevelopment budgets should not be funded from the treasury.  Instead, the treasury should be used to incentivize feature completion through grants.  The treasury should not operate as a venture capital fund or to fund ongoing development budgets.  It should be results oriented and decoupled from budgeting.  Dracula DAO Deep will make exceptions this round for projects that deliver specific, high value features or results at a reasonable ask amount.\n\nMarketing Proposals:\nMarketing budgets are the best way to fund these types of efforts.  Judgement should be used based on the ask amount and value proposition.\n\nResearch Proposals:\nResearch budgets should be evaluated based on the track record of the team being funded, the value proposition and whether the results are released to the public.\n\nDAO Funding:\nDraculaDAO believes DAOs should find other ways to support operations other than public treasury funds.\n\nBitcoin:\nDracula DAO Deep is against purchasing Bitcoin with treasury funds, and are generally not in favor of a tight Bitcoin / Cardano partnership.  Bitcoin DeFi is ok as long as the value proposition remains with Cardano.  Cardano is already Bitcoin++ and treasury funds should not be used to encourage or sustain BTC energy waste and outdated consensus model. \n\nYes - MLabs Core Tool Maintenance.  Ask is reasonable.\nYes - Midgard Optimistic Rollups.  This is urgently needed as an L2 solution for Cardano and the ask is reasonable.\nYes - Hardware Wallets Maintenance.  This is necessary and ask is reasonable.\nYes - Pallas Rust Tooling.  Core tooling used by many projects and ask is reasonable for the specific deliverable.\nYes - UTxO RPC\nYes - Lucid Evolution Maintenance\nYes - zkFold ZK Rollup\nYes - Dolos.  Ask is reasonable with specific deliverable.\nYes - Ledger App rewrite\nYes - Paid Open Source Model.  This looks like a nice way to take the VC function out of the treasury and start towards incentivizing projects through features and benefits like bug bounties.  Willing to take a chance on this, but will vote no in the future if results are disappointing.\nYes - Gerolamo node in typescript\nYes - MLabs Core Tools: Plutarch.  Ask is reasonable\nYes - ZK Bridge\nYes - Eternal maintenance\nYes - Scalus Development Platform\nYes - Cexplorer.io\nYes - Native Asset CDN\nYes - Adastat.net\nYes - Intersect MBO.  DraculaDAO does not like the high ask amount and the budgeting approach, but for Intersect MBO there may not be a better way like there is with software development.  Therefore DraculaDAO supports this proposal, realizing this possibly breaks with the general guidelines DraculaDAO described above.\nYes - Beyond Minimum Viable Governance.  Focused feature set and reasonable ask.  IOHK should use this approach for all its teams.\nYes - Cardano Summit\nYes - Unified Global Events Marketing\nYes - Quadratic Funding.  Reasonable ask for a specific feature.\nYes - Cardano Ecosystem Pavilions\nYes - High-yield RWA Asset.  Direct communication with this vendor increased our faith in this project and have changed our stance on this.\nYes - Expanding Stablecoin / Native Asset Support.  This was marginal in terms of ask amount and number of features grouped together.\nYes - OpShin\nYes - PyCardano\nYes - Cardano Product Committee\nYes - BloxBean Java Tools\nYes - Input Output Research\nYes - MLabs Research\n\nAbstain - Input Output Core Development.  This is simply a warning shot as DraculaDAO expects this proposal will pass.  We are generally in favor of the initiatives and features being delivered by IOHK, but believe the ask is too high as a *single budget line item* and do not want to set a precedent of another ask of similar magnitude for the next budget cycle.  Instead, IOHK should divide its deliverables into features and ask the treasury for grant incentives delivered on completion of the each feature (see Beyond Minimum Viable Governance as what we see as a good example).  We are not in favor of such a large withdrawal encompassing such a large number of features.  In general we do not support using the treasury for budget line items as mentioned in the introduction to this rationale.\nAbstain - Blockfrost Community Budget.  We support Blockfrost and operate an icebreaker node.  There are no specific features mentioned, just an ongoing budget line item, which we do not support.  We will support Blockfrost in other ways.\n\nNo - Web3 developer stack for Bitcoin integration.  DraculaDAO does not support a tight integration with Bitcoin.\nNo - TWEAG Proposals.  We see value there but the ask is too large and too many deliverables bundled together.\nNo - Catalyst 2025.  Ask is too large as a single budget request.\nNo - Cardano Builder DAO.  Treasury should not be used to incentivize features, not fund ongoing budgets for software development or DAOs.\nNo - Market making should have other ways to fund operations.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
