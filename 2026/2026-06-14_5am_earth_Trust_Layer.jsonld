@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Vote: NO\n\n5am.earth proposes a 10 million ADA treasury withdrawal to build a Cardano-anchored trust layer for agricultural supply chains across India, Cambodia, and Kenya. The proposal is administered through Intersect's standardized Treasury Reserve Smart Contract framework developed by Sundae Labs, with disbursement gated by an independent five-entity Oversight Committee. The administrative structure is among the strongest we have seen — it is precisely the milestone-gated, externally-overseen model Vampyre Fund has called for, and we want to commend the proposing team for it. The underlying work — establishing verifiable real-world data anchored on Cardano — is also aligned with the long-term utility vision we support.\n\nVampyre Fund votes NO on grounds of treasury timing.\n\nAt current ADA prices, a 10 million ADA withdrawal represents an avoidable cost in real terms. Treasury preservation during depressed market conditions is itself a long-term position: the treasury's purchasing power compounds when we resist drawing it down at cyclical lows. We would rather fund well-structured proposals after price recovery than approve a wave of multi-million-ADA disbursements at present valuations.\n\nThis vote is not a judgment on 5am.earth, its team, or its administrative framework, all of which we view favorably. We encourage resubmission once market conditions support deployment, and Vampyre Fund expects to support a substantively similar proposal at that time."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
