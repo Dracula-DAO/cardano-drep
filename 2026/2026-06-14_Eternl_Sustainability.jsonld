@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Vote: NO\n\nEternl is foundational user-facing infrastructure. A reliable non-custodial wallet covering payments, staking, governance, and DApp interaction is exactly the kind of work the ecosystem depends on, and the team has a delivery record under prior treasury disbursements. On project merit, this proposal is the type of work Vampyre Fund supports.\n\nVampyre Fund votes NO on grounds of timing, not merit.\n\nADA's market price is presently depressed. Funding any multi-million-ADA treasury withdrawal under these conditions destroys treasury purchasing power: the same deliverable funded after price recovery costs the treasury materially fewer tokens in real terms. Treasury preservation under bear-market conditions is itself a long-term action — the treasury exists to be deployed across decades, not to be drawn down at cyclical lows.\n\nWe encourage Eternl to resubmit, or to extend operations through alternative bridging arrangements, with the expectation that Vampyre Fund will vote YES on a substantively similar proposal once market conditions improve. This vote is a position on treasury timing discipline, not on Eternl's work."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
