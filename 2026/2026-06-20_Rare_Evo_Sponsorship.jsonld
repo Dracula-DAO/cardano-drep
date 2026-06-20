@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Vote: NO\n\nThis proposal requests treasury funds for Cardano to serve as title sponsor of Rare Evo 2026, a blockchain and AI conference held in Las Vegas, alongside a co-located Dev Gov Day event. The proposal is a direct marketing and event spend with no infrastructure deliverable, no treasury repayment, and no on-chain accountability mechanism tied to outcomes.\n\nVampyre Fund votes NO.\n\nThe Vampyre Fund DREP does not support treasury funds being used for short-term marketing efforts. A conference title sponsorship is precisely that — a brand spend whose value is measured in impressions and attendee counts over a single event cycle. It does not build infrastructure, does not return value to the treasury, and does not compound over time. The 6.89% DRep support this proposal has received as of June 2026 reflects broad community alignment with this assessment.\n\nThe inclusion of a Dev Gov Day component does not change this judgment. Governance education and developer outreach are worthwhile goals, but they do not require treasury-funded conference sponsorship to achieve. Community-led governance events have historically operated without top-tier sponsorship budgets. Bundling a developer day with a Las Vegas conference sponsorship does not transform the proposal into infrastructure spending.\n\nVampyre Fund's position is consistent: treasury funds should be reserved for long-term foundational work. Event sponsorships, regardless of the event's quality or the sincerity of the organizers, are not the appropriate use of ADA held in trust for the long-term benefit of the Cardano ecosystem."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
