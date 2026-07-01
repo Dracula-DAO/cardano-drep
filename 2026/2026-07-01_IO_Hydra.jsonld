@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Vote: YES\n\nThis is a treasury withdrawal of ₳5,100,781 (~$816,125 USD at the reference rate of $0.16/ADA) submitted by Input Output (IO) to deliver a feature-complete and hardened Hydra v2 across four workstreams: performance optimization (2–10x snapshot-signing improvements, memory reduction, on-chain contract optimization), operational excellence, ecosystem support, and maintenance and developer experience, scoped to Q3–Q4 2026. Hydra is Cardano's Layer 2 scaling protocol, offering sub-second finality, near-zero fees, and high parallel throughput with Layer 1-grade settlement. Disbursement is milestone-gated: funds flow through Intersect's Treasury Reserve Smart Contract into project-specific smart contracts under a legal contract between IO and Cardano Development Holdings, with an independent third-party assurer signing off each milestone against its deliverables. Voting closes July 8, 2026.\n\nVampyre Fund votes YES.\n\nHydra is foundational long-term protocol infrastructure, which is the core of what Vampyre Fund exists to support. Layer 2 scaling is a prerequisite for Cardano to serve high-throughput settlement and payments use cases without compromising Layer 1 security, and the work funded here is hardening and performance rather than speculative new scope. The accountability structure is meaningfully stronger than a lump-sum grant: releases are gated on delivered milestones verified by an independent assurer, and the proposal commits that all funds not disbursed by the end of the delivery period return to the treasury, with unspent funds from cancelled or reduced deliverables returned proportionally. This is disbursement discipline of the kind Vampyre Fund has consistently asked for, and it is why this proposal does not fall under our standing objection to treasury funds being used as an unaccountable team operating budget.\n\nWe register three concerns without letting them override the vote. First, there is no competitive bidding: IO is the pre-selected executing team, with 86% of the budget (₳4,386,671) allocated to development. As with the Tweag infrastructure proposal, Vampyre Fund continues to believe the long-term health of the ecosystem requires open RFPs and competitive team selection for funded work; this is a structural gap across the 2026 budget process, not unique to Hydra. Second, ₳5.1M is a material withdrawal at a depressed ADA price of $0.16, which elevates the real dilution cost to the treasury relative to what the same work would cost at a higher price. Third, IO has already drawn approximately ₳84.9M of ₳130.7M allocated across prior treasury projects, on top of its historical premine funding; a well-capitalized recipient warrants a higher, not lower, bar on accountability.\n\nOn balance the merits prevail. This is genuine infrastructure Cardano needs, the request is modest relative to comparable protocol work, and the milestone-gated structure with third-party sign-off and treasury refund directly answers the accountability standard Vampyre Fund applies. Vampyre Fund votes YES, and will weight IO's delivery against these milestones when assessing future IO treasury requests."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
