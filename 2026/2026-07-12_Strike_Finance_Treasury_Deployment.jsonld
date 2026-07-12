@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Vote: NO\n\nThis is the Strike Finance liquidity/treasury deployment proposal (gov_action1suskjc6c4nw58c6wtmv77xe79gwj47wp4gvh9cqhhxujwxmam3cqqkz5nwj), a Treasury Withdrawal submitted June 18, 2026 with voting closing July 18, 2026. It seeks to deploy Cardano treasury ADA as liquidity into Strike Finance, a decentralized perpetuals and derivatives protocol on Cardano, in support of its V2 central-limit-order-book architecture. This is not a grant for delivered work; it is a deployment of public treasury capital into a single private DeFi trading venue. No ADA burning is involved.\n\nStrike Finance is a real, operating Cardano protocol — the network's first perpetuals platform, live since May 2025, with a functioning product and an active user base. Deepening on-chain liquidity and productive uses for a treasury that would otherwise sit idle are legitimate goals, and Dracula DAO does not dismiss the ambition of putting treasury assets to work. If the ecosystem is to develop a treasury-productivity framework, protocols with shipped products are the right kind of counterparties to design it with.\n\nDracula DAO votes NO. The DREP's standing position is explicit that it will generally not support treasury funds used for venture capital or speculation unless the ecosystem benefit is compelling AND the risk is low. This deployment fails the low-risk gate on its face. Liquidity supplied to a perpetuals protocol is at-risk capital: it stands as counterparty to leveraged traders and absorbs trading profit-and-loss, on top of smart-contract risk, oracle/liquidation risk, and the volatility of a thinly capitalized derivatives venue. Principal is not protected, and any return is contingent on trading flow rather than guaranteed — a materially different proposition from funding infrastructure that produces a durable public good. It is also a concentration and favoritism concern: committing public treasury capital to one private protocol's order book advantages that protocol and its token holders over every other Cardano DeFi venue that receives no such public backstop, which is not a neutral use of common funds. These risks are compounded by timing — ADA trades near multi-year lows, so tokens risked or lost here are spent at their weakest purchasing power, and unlike an operating grant, deployed trading capital can be impaired to zero.\n\nThis vote is not a judgment that Strike Finance is a poor protocol, nor that treasury productivity is off the table forever. It is a judgment that deploying at-risk trading capital into a single leveraged venue is precisely the high-variance, pick-a-winner use of the treasury that Dracula DAO's philosophy exists to refuse. We note further that the exact ADA amount and any principal-protection or revenue-return terms were not verifiable from public governance sources at the time of this vote; the burden of demonstrating compelling benefit and genuinely low risk sits with the proposal, and the perp-LP structure cannot meet the low-risk bar regardless of the headline figure. Dracula DAO would engage constructively with a future ecosystem-wide treasury-productivity framework that is protocol-neutral, caps exposure, protects principal, and returns realized yield to the treasury on measurable terms — but it will not underwrite a single derivatives protocol's liquidity with common funds."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
